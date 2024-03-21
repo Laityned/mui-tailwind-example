@@ -1,10 +1,11 @@
-import Image from "next/image";
+import { Slider } from "@mui/material";
 
 export default function Home() {
   return (
     <main>
-      <h1>Hello, world!</h1>
-      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+      <h1 className="text-teal-600">Hello, world!</h1>
+      <Slider defaultValue={30} />
+      <Slider defaultValue={30} className="text-teal-600" />
     </main>
   );
 }
